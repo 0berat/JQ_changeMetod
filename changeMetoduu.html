@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+             $(".name").change(function () {
+
+
+                var value =  $(this).val();
+
+                 $(".result").text(  value+ " " +$(".result").text());
+
+
+
+        })
+
+            $(".last").change(function () {
+
+
+                // var value1 =  $(this).val();
+                var value =  $(this).val();
+
+                $(".result").text($(".result").text()+ " " +  value);
+
+
+
+            })
+            $("#il").change(function () {
+                var value = $(this).val();
+                $(".sehir").text(value)
+
+
+              })
+        })
+    </script>
+</head>
+<body>
+<input type="text" class="name">
+<input type="text" class="last">
+<div class="result"></div>
+<!--<div class="result1"></div>-->
+<hr>
+<select name="" id="il">
+    <option value="ist">İstanbul</option>
+    <option value="ank">Ankara</option>
+</select>
+<div class="sehir"></div>
+</body>
+</html>
